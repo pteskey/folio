@@ -4,73 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patrick Teskey | Front-end Developer</title>
+    <title>Patrick Teskey | Front-end Developer & Web Designer</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Patrick Teskey</h1>
-        <h2>Front-end Developer</h2>
-      </header>
-      <div class="toggle">
-        <svg
-          class="burger-menu burger-pos"
-          width="36"
-          height="36"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          color="#000"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-        <svg
-          class="burger-close burger-pos"
-          width="36"
-          height="36"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          color="#000"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
+    <nav>
+      <div class="logo">
+        <img src="" alt="" />
       </div>
-      <nav>
-        <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Projects</a></li>
-        </ul>
-      </nav>
-    </div>
-    <main>
-      <section class="intro">
-        <img class="profile-img" src="images/profilepic.jpg" alt="" srcset="" />
-        <p class="about-blurb">
-          Hi. I’m Patrick, a student studying web development at SAIT. Formally
-          a quality control inspector in the construction industry. Now I’m
-          following my dreams of becoming a computer programmer.
-        </p>
-        <img class="main-svg" src="images/undraw_developer_activity_bv83.svg" alt="" srcset="">
-      </section>
-    </main>
-    <footer>
-      &copy 2021 Patrick Teskey. MIT License.
-    </footer>
-    <script src="js/main.js"></script>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Skills</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="btn-menu fas fa-bars fa-2x"></i>        
+      </button>
+      <div class="header-textbox">
+      <h1>Patrick Teskey</h1>
+      <h2>Front-end Developer & Web Designer</h2>
+      <button id="open" class="cta-btn">Contact Me</button>
+      </div>
+      <div class="header-img">
+      <img src="images/Code Development _Flatline.svg" alt="">
+      </div>      
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>     
+    </header>   
+    
+    <div id="modal" class="modal-container">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Contact Me</h3>
+        </div>
+        <div class="modal-content">
+          <p>Please feel free to contact me</p>
+          <form action="" class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Enter Name">
+            </div>
+            <div>
+              <label for="name">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="Enter Email">
+            </div>
+            <div>
+              <label for="name">Message</label>
+              <textarea name="message" class="form-input" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="submit-btn">
+          </form>
+
+        </div>
+      </div>
+    </div>  
   </body>
 </html>
